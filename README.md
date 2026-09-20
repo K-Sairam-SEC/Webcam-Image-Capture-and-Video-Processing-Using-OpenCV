@@ -47,7 +47,7 @@ Resize the frame and rotate it using OpenCV functions, then display the processe
 
 
 
----py
+```py
 // Write the frame as image
 import cv2
 import matplotlib.pyplot as plt
@@ -111,7 +111,8 @@ for i in range(50):
     plt.show()
     time.sleep(0.05)
 
-cap.release()```
+cap.release()
+```
 ## Output
 
 ### i) Write the frame as JPG image
