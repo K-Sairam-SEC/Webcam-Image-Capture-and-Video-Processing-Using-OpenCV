@@ -1,3 +1,4 @@
+### EXP-2-Record-Image Acquisition using Web Camera
 # Image Capture and Video Processing Using OpenCV
 
 ---
@@ -118,7 +119,7 @@ cap.release()
 ### i) Write the frame as JPG image
 Captured image is saved as `captured_image.jpg`
 
-<img width="403" height="320" alt="image" src="https://github.com/user-attachments/assets/a9b835b6-a6e0-4f2f-8f4c-97ce7286451f" />
+<img width="410" height="320" alt="image" src="https://github.com/user-attachments/assets/2a4919e4-5461-400a-8696-99de75909389" />
 
 
 
@@ -126,20 +127,20 @@ Captured image is saved as `captured_image.jpg`
 Live webcam video is displayed
 
 
-<img width="419" height="319" alt="image" src="https://github.com/user-attachments/assets/459852e9-04a9-4392-a9e8-ff86d1f32c93" />
+<img width="385" height="293" alt="image" src="https://github.com/user-attachments/assets/96bcb40a-064b-4205-ba02-f94d104ab8a6" />
 
 
 ### iii) Display the video by resizing the window
 Video is shown in resized resolution (640 × 480)
 
-<img width="221" height="311" alt="image" src="https://github.com/user-attachments/assets/608d08e0-743e-46b1-a0fe-e837d7bc99a7" />
+<img width="419" height="309" alt="image" src="https://github.com/user-attachments/assets/7668b7e9-06e9-4400-85fc-f2f2fa320d0d" />
 
 
 ### iv) Rotate and display the video
 Video is displayed after rotation (90° clockwise)
 
 
-<img width="263" height="315" alt="image" src="https://github.com/user-attachments/assets/ad9432ec-a4e5-476f-bf7c-6a46df7a1fc2" />
+<img width="244" height="305" alt="image" src="https://github.com/user-attachments/assets/9a8250fd-5cf5-4919-8907-6475e8a1dc5d" />
 
 ---
 
