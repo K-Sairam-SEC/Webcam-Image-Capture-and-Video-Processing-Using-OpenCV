@@ -1,7 +1,10 @@
 # Image Capture and Video Processing Using OpenCV
 
 ---
-
+### Developed By:
+### **Name:** Sairam K
+### Register No:
+### 212225240132
 ## Aim
 
 To write a Python program using OpenCV to capture an image from the webcam and perform the following operations:
@@ -42,13 +45,73 @@ Resize the frame and rotate it using OpenCV functions, then display the processe
 
 ## 💻 Program
 
-### Developed By:
-**Name:** Sairam K
 
-### Register No:
-212225240132
----
 
+---py
+// Write the frame as image
+import cv2
+import matplotlib.pyplot as plt
+from IPython.display import clear_output
+import time
+cap = cv2.VideoCapture(0)
+ret, frame = cap.read()
+if ret:
+    cv2.imwrite("captured_frame.jpg", frame)
+cap.release()
+captured_image = cv2.imread('captured_frame.jpg')
+plt.imshow(captured_image[:,:,::-1])
+plt.title('Captured Frame')
+plt.axis('off')
+plt.show()
+// Display the video in Frames
+// Display the video
+cap = cv2.VideoCapture(0)
+
+for i in range(50):
+    ret, frame = cap.read()
+    if not ret:
+        break
+    frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    clear_output(wait=True)
+    plt.imshow(frame_rgb)
+    plt.axis('off')
+    plt.show()
+    time.sleep(0.05)
+
+cap.release()
+// Resize and Display
+cap = cv2.VideoCapture(0)
+
+for i in range(50):
+    ret, frame = cap.read()
+    if not ret:
+        break
+    resized_frame = cv2.resize(frame, (100, 150))  # Resize to 320x240
+    frame_rgb = cv2.cvtColor(resized_frame, cv2.COLOR_BGR2RGB)
+    clear_output(wait=True)
+    plt.imshow(frame_rgb)
+    plt.axis('off')
+    plt.show()
+    time.sleep(0.05)
+
+cap.release()
+
+// Rotate and display the video
+cap = cv2.VideoCapture(0)
+
+for i in range(50):
+    ret, frame = cap.read()
+    if not ret:
+        break
+    rotated_frame = cv2.rotate(frame, cv2.ROTATE_90_CLOCKWISE)
+    frame_rgb = cv2.cvtColor(rotated_frame, cv2.COLOR_BGR2RGB)
+    clear_output(wait=True)
+    plt.imshow(frame_rgb)
+    plt.axis('off')
+    plt.show()
+    time.sleep(0.05)
+
+cap.release()```
 ## Output
 
 ### i) Write the frame as JPG image
