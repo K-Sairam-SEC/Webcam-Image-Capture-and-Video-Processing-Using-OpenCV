@@ -48,7 +48,7 @@ Resize the frame and rotate it using OpenCV functions, then display the processe
 
 
 ```py
-// Write the frame as image
+# Write the frame as image
 import cv2
 import matplotlib.pyplot as plt
 from IPython.display import clear_output
@@ -63,8 +63,8 @@ plt.imshow(captured_image[:,:,::-1])
 plt.title('Captured Frame')
 plt.axis('off')
 plt.show()
-// Display the video in Frames
-// Display the video
+# Display the video in Frame
+
 cap = cv2.VideoCapture(0)
 
 for i in range(50):
@@ -79,7 +79,7 @@ for i in range(50):
     time.sleep(0.05)
 
 cap.release()
-// Resize and Display
+# Resize and Display
 cap = cv2.VideoCapture(0)
 
 for i in range(50):
@@ -96,7 +96,7 @@ for i in range(50):
 
 cap.release()
 
-// Rotate and display the video
+# Rotate and display the video
 cap = cv2.VideoCapture(0)
 
 for i in range(50):
